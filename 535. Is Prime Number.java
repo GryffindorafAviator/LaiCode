@@ -1,6 +1,5 @@
-Easy
-
-Determine whether an integer n is a prime number. Assumption: n is >= 2.
+// Easy
+// Determine whether an integer n is a prime number. Assumption: n is >= 2.
 
 public class Solution {
   public boolean isPrime(int n) {
@@ -12,5 +11,3 @@ public class Solution {
     return true;
   }
 }
-
-Solution
