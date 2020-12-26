@@ -1,10 +1,10 @@
-Easy
-求n的阶乘. Assumption, n > 1.
+// Easy
+// 求n的阶乘. Assumption, n > 1.
 
-Example:
-1, n = 3, return 6
-2, n = 4, return 24
-3, n = 5, return 120
+// Example:
+// 1, n = 3, return 6
+// 2, n = 4, return 24
+// 3, n = 5, return 120
 
 public class Solution {
   public int factorial(int n) {
@@ -15,3 +15,5 @@ public class Solution {
     return ans;
   }
 }
+
+
