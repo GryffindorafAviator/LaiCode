@@ -3,8 +3,15 @@
 
 public class Solution {
   public boolean isEven(int x) {
-    boolean b = x % 2 == 0 ? true : false; //complete the expression
+    boolean b = x % 2 == 0 ? true : false;
     return b;
-    // Write your solution here
+  }
+}
+
+// Solution
+public class Solution {
+  public boolean isEven(int x) {
+    boolean b = (x % 2 == 0); 
+    return b;
   }
 }
