@@ -1,5 +1,5 @@
-Easy
-Check if the number x is even, return true for even numbers.
+// Easy
+// Check if the number x is even, return true for even numbers.
 
 public class Solution {
   public boolean isEven(int x) {
