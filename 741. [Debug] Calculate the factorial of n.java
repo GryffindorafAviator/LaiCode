@@ -1,12 +1,12 @@
-Debug
-There are bugs in the given code, please fix them.
+// Debug
+// There are bugs in the given code, please fix them.
 
-Calculate the factorial of n (n > 1).
+// Calculate the factorial of n (n > 1).
 
-Example:
-n = 3, return 6
-n = 4, return 24
-n = 5, return 120
+// Example:
+// n = 3, return 6
+// n = 4, return 24
+// n = 5, return 120
 
 public class Solution {
   public int factorial(int n) {
