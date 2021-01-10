@@ -1,10 +1,10 @@
-Debug
-Given an array, return the sum of all elements.
+// Debug
+// Given an array, return the sum of all elements.
 
-Example:
-array = [7, 3, 2], return 12
+// Example:
+// array = [7, 3, 2], return 12
 
-Note: if the array is null or empty, return -1.
+// Note: if the array is null or empty, return -1.
 
 public class Solution {
   public int sum(int[] array) {
