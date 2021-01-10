@@ -1,7 +1,7 @@
-Debug
-There are bugs in the given code, please fix them.
+// Debug
+// There are bugs in the given code, please fix them.
 
-Return String of "Hello world!"
+// Return String of "Hello world!"
 
 public class Solution {
   public String helloWorld() {
