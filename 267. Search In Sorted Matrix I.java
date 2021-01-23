@@ -143,3 +143,62 @@ public class Solution {
     return new int[] {-1, -1}; 
   }
 }
+
+// Solution
+public class Solution {
+  public int[] search(int[][] matrix, int target) {
+    int[] res = new int[]{-1, -1};
+
+    if (matrix.length == 0 || matrix[0].length == 0) {
+      return res;
+    }
+
+    int row = findRow(matrix, 0, matrix.length - 1, target);
+    
+    if (row == -1) {
+      return res;
+    }
+    
+    int col = findCol(matrix[row], 0, matrix[row].length - 1, target);
+
+    if (col == -1) {
+      return res;
+    }
+
+    res[0] = row;
+    res[1] = col;
+
+    return res;
+  }
+
+  private int findRow(int[][] matrix, int up, int down, int target) {
+    while (up <= down) {
+      int mid = up + (down - up) / 2;
+      if (matrix[mid][0] > target) {
+        down = mid - 1;
+      }
+      else {
+        up = mid + 1;
+      }
+    }
+
+    return down;
+  }
+
+  private int findCol(int[]array, int left, int right, int target) {
+    while (left <= right) {
+      int mid = left + (right - left) / 2;
+      if (array[mid] == target) {
+        return mid;
+      }
+      else if (target < array[mid]) {
+        right = mid - 1;
+      }
+      else {
+        left = mid + 1;
+      }
+    }
+
+    return -1;
+  }  
+}
