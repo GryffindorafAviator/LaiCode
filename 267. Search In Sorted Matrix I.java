@@ -13,6 +13,7 @@
 // target = 7, return {1, 2}
 // target = 6, return {-1, -1} to represent the target number does not exist in the matrix.
 
+// Solution 1
 public class Solution {
   public int[] search(int[][] matrix, int target) {
     int n = matrix.length;
@@ -109,5 +110,36 @@ public class Solution {
 
       return new int[]{-1, -1};
     }
+  }
+}
+
+// Solution 2
+public class Solution {
+  public int[] search(int[][] matrix, int target) {
+    if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
+      return new int[] {-1, -1};
+    }
+
+    int m = matrix.length;
+    int n = matrix[0].length;
+    int lt = 0;
+    int rt = m * n - 1;
+
+    while (lt <= rt) {
+      int midIndex = lt + (rt - lt) / 2;
+      int mid = matrix[midIndex / n][midIndex % n];
+
+      if (mid == target) {
+        return new int[]{midIndex / n, midIndex % n};
+      }
+      else if (target < mid) {
+        rt = midIndex - 1;
+      } 
+      else {
+        lt = midIndex + 1;
+      }
+    }
+
+    return new int[] {-1, -1}; 
   }
 }
