@@ -54,3 +54,40 @@ public class Solution {
     return ans;
   }
 }
+
+// Solution
+public class Solution {
+  public int[] merge(int[] one, int[] two) {
+    int len_one = one.length;
+    int len_two = two.length;
+    int[] ans = new int[len_one + len_two];
+    int i = 0, j = 0, k = 0;
+
+    while (i < len_one && j < len_two) {
+      if (one[i] < two[j]) {
+        ans[k] = one[i];
+        ++i;
+      }
+      else {
+        ans[k] = two[j];
+        ++j;
+      }
+
+      ++k;
+    }
+
+    while (i < len_one) {
+      ans[k] = one[i];
+      ++i;
+      ++k;
+    }
+
+    while (j < len_two) {
+      ans[k] = two[j];
+      ++j;
+      ++k;
+    }
+
+    return ans;
+  }
+}
