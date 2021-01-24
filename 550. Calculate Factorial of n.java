@@ -1,14 +1,14 @@
-Easy
-Calculate the factorial of n using recursion.
+// Easy
+// Calculate the factorial of n using recursion.
 
-Assumption: n >= 1.
+// Assumption: n >= 1.
 
-Example:
-n = 1 ⇒ return 1
+// Example:
+// n = 1 ⇒ return 1
 
-n = 3 ⇒ return 6
+// n = 3 ⇒ return 6
 
-n = 5 ⇒ return 120
+// n = 5 ⇒ return 120
 
 public class Solution {
   public long factorial(int n) {
