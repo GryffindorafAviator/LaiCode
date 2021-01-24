@@ -12,6 +12,7 @@
 // What if the result is overflowed? 
 // We can assume the result will not be overflowed when we solve this problem on this online judge.
 
+// Solution 1
 public class Solution {
   public long power(int a, int b) {
     if ((a == 0 && b == 0) || (a == 1)) {
@@ -25,5 +26,16 @@ public class Solution {
     }
 
     return ans;
+  }
+}
+
+// Solution 2
+public class Solution {
+  public long power(int a, int b) {
+    if (a == 1 || b == 0) {
+      return 1;
+    }
+
+    return a * power(a, b - 1);
   }
 }
