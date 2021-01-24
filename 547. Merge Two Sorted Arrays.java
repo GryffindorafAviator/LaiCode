@@ -1,12 +1,12 @@
-Easy
-Given two sorted arrays, merge them into one sorted array.
+// Easy
+// Given two sorted arrays, merge them into one sorted array.
 
-Assumption: the two arrays are not null or empty.
+// Assumption: the two arrays are not null or empty.
 
-Example:
-array1 = {3,7}
-array2 = {1,6,8,9}
-answer = {1,3,6,7,8,9}
+// Example:
+// array1 = {3,7}
+// array2 = {1,6,8,9}
+// answer = {1,3,6,7,8,9}
 
 public class Solution {
   public int[] merge(int[] one, int[] two) {
