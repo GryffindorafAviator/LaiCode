@@ -14,7 +14,7 @@
 
 public class Solution {
   public int[] solve(int[] array) {
-    if (array == null || array.length == 0) {
+    if (array == null || array.length <= 1) {
       return array;
     }
 
