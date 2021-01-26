@@ -1,8 +1,8 @@
-Easy
-Given a stack of numbers, 
-shuffle all numbers into another Stack so that the order is reversed.
+// Easy
+// Given a stack of numbers, 
+// shuffle all numbers into another Stack so that the order is reversed.
 
-Assumption: the stack is not null or empty.
+// Assumption: the stack is not null or empty.
 
 Example:
 stack1 = [8,4,6,1]  stack2 = []
