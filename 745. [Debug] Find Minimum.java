@@ -1,12 +1,12 @@
-Debug
-There are bugs in the given code, please fix them.
+// Debug
+// There are bugs in the given code, please fix them.
 
-Given an array, return its minimum value
+// Given an array, return its minimum value
 
-Example:
-array = [7, 3, 2], return 2
+// Example:
+// array = [7, 3, 2], return 2
 
-Note: if the array is null or empty, return 0.
+// Note: if the array is null or empty, return 0.
 
 public class Solution {
   public int min(int[] array) {
