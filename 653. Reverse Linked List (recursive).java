@@ -1,10 +1,10 @@
-Easy
-Reverse a singly-linked list recursively.
+// Easy
+// Reverse a singly-linked list recursively.
 
-Examples
-L = null, return null
-L = 1 -> null, return 1 -> null
-L = 1 -> 2 -> 3 -> null, return 3 -> 2 -> 1 -> null
+// Examples
+// L = null, return null
+// L = 1 -> null, return 1 -> null
+// L = 1 -> 2 -> 3 -> null, return 3 -> 2 -> 1 -> null
 
 /**
  * class ListNode {
