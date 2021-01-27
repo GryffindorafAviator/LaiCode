@@ -1,24 +1,24 @@
-Easy
-Insert a value in a sorted linked list.
+// Easy
+// Insert a value in a sorted linked list.
 
-Assumption: 
-length > 1,  
-first node value <= inserting node value <= last node value 
+// Assumption: 
+// length > 1,  
+// first node value <= inserting node value <= last node value 
 
-Example:
-1 -> 3 -> null, 
-insert : 2 → return 1 -> 2 -> 3 -> null
+// Example:
+// 1 -> 3 -> null, 
+// insert : 2 → return 1 -> 2 -> 3 -> null
 
-/**
- * class ListNode {
- *   public int value;
- *   public ListNode next;
- *   public ListNode(int value) {
- *     this.value = value;
- *     next = null;
- *   }
- * }
- */
+// /**
+//  * class ListNode {
+//  *   public int value;
+//  *   public ListNode next;
+//  *   public ListNode(int value) {
+//  *     this.value = value;
+//  *     next = null;
+//  *   }
+//  * }
+//  */
 public class Solution {
   public ListNode insertNode(ListNode head, int target) {
     ListNode tar = new ListNode(target);
