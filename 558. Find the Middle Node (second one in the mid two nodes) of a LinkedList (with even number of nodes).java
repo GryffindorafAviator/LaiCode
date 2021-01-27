@@ -1,9 +1,9 @@
-Easy
-Find the middle node (second one in the mid two nodes) of a given linked list with even number length.
+// Easy
+// Find the middle node (second one in the mid two nodes) of a given linked list with even number length.
 
-Example: 
-L = null, return null
-L = 1 -> 2 -> 3 -> 4 null, return 3
+// Example: 
+// L = null, return null
+// L = 1 -> 2 -> 3 -> 4 null, return 3
 
 /**
  * class ListNode {
