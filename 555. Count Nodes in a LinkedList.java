@@ -1,12 +1,12 @@
-Easy
-Given a linked list, 
-count the number of nodes in it.
+// Easy
+// Given a linked list, 
+// count the number of nodes in it.
 
-Assumption: The linkedlist is not null or empty.
+// Assumption: The linkedlist is not null or empty.
 
-Example:
-Given: 1->7->5->4->2->null
-Answer: 5
+// Example:
+// Given: 1->7->5->4->2->null
+// Answer: 5
 
 /**
  * class ListNode {
