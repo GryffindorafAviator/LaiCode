@@ -1,12 +1,12 @@
-Easy
-Generate a linked list of length n, 
-where the nodes contains numbers from 0 to n-1 in order. 
+// Easy
+// Generate a linked list of length n, 
+// where the nodes contains numbers from 0 to n-1 in order. 
 
-Assumption: n > 0.
+// Assumption: n > 0.
 
-Example:
-n = 3
-Answer: 0->1->2->null
+// Example:
+// n = 3
+// Answer: 0->1->2->null
 
 /**
  * class ListNode {
