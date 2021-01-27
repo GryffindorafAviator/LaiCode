@@ -47,3 +47,39 @@ public class Solution {
     return head;
   }
 }
+
+// Solution
+/**
+ * class ListNode {
+ *   public int value;
+ *   public ListNode next;
+ *   public ListNode(int value) {
+ *     this.value = value;
+ *     next = null;
+ *   }
+ * }
+ */
+public class Solution {
+  public ListNode insert(ListNode head, int value) {
+    ListNode val = new ListNode(value);
+
+    if (head == null || value < head.value) {
+      val.next = head;
+      return val;
+    }
+
+    ListNode cur = head;
+
+    while (cur.next != null && cur.next.value < value ) {
+      cur = cur.next;
+    }
+
+    if (cur.next != null) {
+        val.next = cur.next;
+      }
+
+    cur.next = val;
+
+    return head;
+  }
+}
