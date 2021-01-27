@@ -1,12 +1,12 @@
-Easy
-Insert a value to the tail of a  linked list.
+// Easy
+// Insert a value to the tail of a  linked list.
 
-Example:
-1 -> 3 -> null, 
-insert : 5 → return 1 -> 3 -> 5 -> null
+// Example:
+// 1 -> 3 -> null, 
+// insert : 5 → return 1 -> 3 -> 5 -> null
 
-null, 
-insert: 5 → return 5 → null
+// null, 
+// insert: 5 → return 5 → null
 
 /**
  * class ListNode {
