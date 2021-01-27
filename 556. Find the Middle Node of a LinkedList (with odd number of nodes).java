@@ -1,10 +1,10 @@
-Easy
-Find the middle node of a given linked list with odd number length.
+// Easy
+// Find the middle node of a given linked list with odd number length.
 
-Assumption: the length > 0
+// Assumption: the length > 0
 
-Example: 
-L = 1 -> 2 -> 3 -> null, return 2->3
+// Example: 
+// L = 1 -> 2 -> 3 -> null, return 2->3
 
 /**
  * class ListNode {
