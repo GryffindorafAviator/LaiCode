@@ -1,15 +1,15 @@
-Easy
-Given an array, and a pivotIndex. 
-Rearrange the array so that the numbers smaller than array[pivotIndex] are on the left side of array[pivotIndex],
-and numbers larger than array[pivotIndex] are on the right side of array[pivotIndex].
+// Easy
+// Given an array, and a pivotIndex. 
+// Rearrange the array so that the numbers smaller than array[pivotIndex] are on the left side of array[pivotIndex],
+// and numbers larger than array[pivotIndex] are on the right side of array[pivotIndex].
 
-Assumption:
-The array is not null or empty. pivotIndex is within the boundary of the array.
+// Assumption:
+// The array is not null or empty. pivotIndex is within the boundary of the array.
 
-Example:
-array = {9,4,6,2,0,1,7}
-pivotIndex = 2
-Result: {1, 4, 0, 2, 6, 9, 7} 
+// Example:
+// array = {9,4,6,2,0,1,7}
+// pivotIndex = 2
+// Result: {1, 4, 0, 2, 6, 9, 7} 
 
 class Solution {
 	public void partition(int[] array, int pivotIndex) {
