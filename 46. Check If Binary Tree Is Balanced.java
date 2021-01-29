@@ -1,50 +1,50 @@
-Medium
-Check if a given binary tree is balanced. 
-A balanced binary tree is one in which the depths of every node’s left and right subtree differ by at most 1.
+// Medium
+// Check if a given binary tree is balanced. 
+// A balanced binary tree is one in which the depths of every node’s left and right subtree differ by at most 1.
 
-Examples
+// Examples
 
-        5
+//         5
 
-      /    \
+//       /    \
 
-    3        8
+//     3        8
 
-  /   \        \
+//   /   \        \
 
-1      4        11
+// 1      4        11
 
-is balanced binary tree,
+// is balanced binary tree,
 
-        5
+//         5
 
-      /
+//       /
 
-    3
+//     3
 
-  /   \
+//   /   \
 
-1      4
+// 1      4
 
-is not balanced binary tree.
+// is not balanced binary tree.
 
-Corner Cases
-What if the binary tree is null? Return true in this case.
-How is the binary tree represented?
-We use the level order traversal sequence with a special symbol "#" denoting the null node.
+// Corner Cases
+// What if the binary tree is null? Return true in this case.
+// How is the binary tree represented?
+// We use the level order traversal sequence with a special symbol "#" denoting the null node.
 
-For Example:
-The sequence [1, 2, 3, #, #, 4] represents the following binary tree:
+// For Example:
+// The sequence [1, 2, 3, #, #, 4] represents the following binary tree:
 
-    1
+//     1
 
-  /   \
+//   /   \
 
- 2     3
+//  2     3
 
-      /
+//       /
 
-    4
+//     4
 
 /**
  * public class TreeNode {
