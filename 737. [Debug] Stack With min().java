@@ -1,14 +1,14 @@
-Debug
-There are bugs in the given code, please fix them.
+// Debug
+// There are bugs in the given code, please fix them.
 
-Enhance the stack implementation to support min() operation. 
-min() should return the current minimum value in the stack. 
-If the stack is empty, min() should return -1.
+// Enhance the stack implementation to support min() operation. 
+// min() should return the current minimum value in the stack. 
+// If the stack is empty, min() should return -1.
 
-push(int element) - push the element to top
-pop() - return the top element and remove it, if the stack is empty, return -1
-top() - return the top element without remove it, if the stack is empty, return -1
-min() - return the current min value in the stack.
+// push(int element) - push the element to top
+// pop() - return the top element and remove it, if the stack is empty, return -1
+// top() - return the top element without remove it, if the stack is empty, return -1
+// min() - return the current min value in the stack.
 
 public class Solution {
   private Deque<Integer> stack;
