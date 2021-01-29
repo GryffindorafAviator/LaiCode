@@ -1,7 +1,7 @@
-Easy
-Write a function that returns a random number within the range of [a, b] with equal probabilities.
+// Easy
+// Write a function that returns a random number within the range of [a, b] with equal probabilities.
 
-Note: you can use Java’s Random class.
+// Note: you can use Java’s Random class.
 
 class Solution {
 	public int random(int a, int b) {
