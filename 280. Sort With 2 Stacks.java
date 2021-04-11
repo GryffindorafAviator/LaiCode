@@ -1,15 +1,15 @@
-Medium
-Given an array that is initially stored in one stack, sort it with one additional stacks (total 2 stacks).
+// Medium
+// Given an array that is initially stored in one stack, sort it with one additional stacks (total 2 stacks).
 
-After sorting the original stack should contain the sorted integers and from top to bottom the integers are sorted in ascending order.
+// After sorting the original stack should contain the sorted integers and from top to bottom the integers are sorted in ascending order.
 
-Assumptions:
+// Assumptions:
 
-The given stack is not null.
-There can be duplicated numbers in the give stack.
-Requirements:
+// The given stack is not null.
+// There can be duplicated numbers in the give stack.
+// Requirements:
 
-No additional memory, time complexity = O(n ^ 2).
+// No additional memory, time complexity = O(n ^ 2).
   
 public class Solution {
   public void sort(LinkedList<Integer> s1) {
