@@ -84,3 +84,5 @@ public class Solution {
 
   }
 }
+// TC O(n), SC O(height)
+// n is the number of nodes
