@@ -1,52 +1,52 @@
-Easy
-Check if a given binary tree is symmetric.
+// Easy
+// Check if a given binary tree is symmetric.
 
-Examples
+// Examples
 
-        5
+//         5
 
-      /    \
+//       /    \
 
-    3        3
+//     3        3
 
-  /   \    /   \
+//   /   \    /   \
 
-1      4  4      1
+// 1      4  4      1
 
-is symmetric.
+// is symmetric.
 
-        5
+//         5
 
-      /    \
+//       /    \
 
-    3        3
+//     3        3
 
-  /   \    /   \
+//   /   \    /   \
 
-1      4  1      4
+// 1      4  1      4
 
-is not symmetric.
+// is not symmetric.
 
-Corner Cases
+// Corner Cases
 
-What if the binary tree is null? Return true in this case.
-How is the binary tree represented?
+// What if the binary tree is null? Return true in this case.
+// How is the binary tree represented?
 
-We use the level order traversal sequence with a special symbol "#" denoting the null node.
+// We use the level order traversal sequence with a special symbol "#" denoting the null node.
 
-For Example:
+// For Example:
 
-The sequence [1, 2, 3, #, #, 4] represents the following binary tree:
+// The sequence [1, 2, 3, #, #, 4] represents the following binary tree:
 
-    1
+//     1
 
-  /   \
+//   /   \
 
- 2     3
+//  2     3
 
-      /
+//       /
 
-    4
+//     4
       
 /**
  * public class TreeNode {
