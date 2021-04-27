@@ -1,49 +1,49 @@
-Medium
-Determine whether two given binary trees are identical assuming any number of ‘tweak’s are allowed. A tweak is defined as a swap of the children of one node in the tree.
+// Medium
+// Determine whether two given binary trees are identical assuming any number of ‘tweak’s are allowed. A tweak is defined as a swap of the children of one node in the tree.
 
-Examples
+// Examples
 
-        5
+//         5
 
-      /    \
+//       /    \
 
-    3        8
+//     3        8
 
-  /   \
+//   /   \
 
-1      4
+// 1      4
 
-and
+// and
 
-        5
+//         5
 
-      /    \
+//       /    \
 
-    8        3
+//     8        3
 
-           /   \
+//            /   \
 
-          1     4
+//           1     4
 
-the two binary trees are tweaked identical.
+// the two binary trees are tweaked identical.
 
-How is the binary tree represented?
+// How is the binary tree represented?
 
-We use the level order traversal sequence with a special symbol "#" denoting the null node.
+// We use the level order traversal sequence with a special symbol "#" denoting the null node.
 
-For Example:
+// For Example:
 
-The sequence [1, 2, 3, #, #, 4] represents the following binary tree:
+// The sequence [1, 2, 3, #, #, 4] represents the following binary tree:
 
-    1
+//     1
 
-  /   \
+//   /   \
 
- 2     3
+//  2     3
 
-      /
+//       /
 
-    4
+//     4
       
  /**
  * public class TreeNode {
@@ -72,7 +72,4 @@ public class Solution {
   }
 }
 
-If it's a balanced binary tree, TC O(n^2)
-  
-  
-  
+// If it's a balanced binary tree, TC O(n^2)
