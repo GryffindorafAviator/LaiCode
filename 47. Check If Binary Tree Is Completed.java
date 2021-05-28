@@ -1,52 +1,52 @@
-Medium
-Check if a given binary tree is completed. A complete binary tree is one in which every level of the binary tree is completely filled except possibly the last level. Furthermore, all nodes are as far left as possible.
+// Medium
+// Check if a given binary tree is completed. A complete binary tree is one in which every level of the binary tree is completely filled except possibly the last level. Furthermore, all nodes are as far left as possible.
 
-Examples
+// Examples
 
-        5
+//         5
 
-      /    \
+//       /    \
 
-    3        8
+//     3        8
 
-  /   \
+//   /   \
 
-1      4
+// 1      4
 
-is completed.
+// is completed.
 
-        5
+//         5
 
-      /    \
+//       /    \
 
-    3        8
+//     3        8
 
-  /   \        \
+//   /   \        \
 
-1      4        11
+// 1      4        11
 
-is not completed.
+// is not completed.
 
-Corner Cases
+// Corner Cases
 
-What if the binary tree is null? Return true in this case.
-How is the binary tree represented?
+// What if the binary tree is null? Return true in this case.
+// How is the binary tree represented?
 
-We use the level order traversal sequence with a special symbol "#" denoting the null node.
+// We use the level order traversal sequence with a special symbol "#" denoting the null node.
 
-For Example:
+// For Example:
 
-The sequence [1, 2, 3, #, #, 4] represents the following binary tree:
+// The sequence [1, 2, 3, #, #, 4] represents the following binary tree:
 
-    1
+//     1
 
-  /   \
+//   /   \
 
- 2     3
+//  2     3
 
-      /
+//       /
 
-    4
+//     4
       
 /**
  * public class TreeNode {
