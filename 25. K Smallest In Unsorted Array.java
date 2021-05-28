@@ -1,12 +1,26 @@
+Medium
+Find the K smallest numbers in an unsorted integer array A. The returned numbers should be in ascending order.
+
+Assumptions
+
+A is not null
+K is >= 0 and smaller than or equal to size of A
+Return
+
+an array with size K containing the K smallest numbers in ascending order
+Examples
+
+A = {3, 4, 1, 2, 5}, K = 3, the 3 smallest numbers are {1, 2, 3}
+
 public class Solution {
   public int[] kSmallest(int[] array, int k) {
     if (array.length == 0 || k == 0) {
       return new int[0];
-    }  
+    }
+    
+    int[] result = new int[k];
 
-    int[] rstArry = new int[k];
-
-    PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer>(k, new Comparator<Integer>() {
+    PriorityQueue<Integer> maxHeap = new PriorityQueue<>(k, new Comparator<Integer>() {
       @Override
       public int compare(Integer o1, Integer o2) {
         if (o1.equals(o2)) {
@@ -28,9 +42,9 @@ public class Solution {
     }
 
     for (int i = k - 1; i >= 0; --i) {
-      rstArry[i] = maxHeap.poll();
+      result[i] = maxHeap.poll();
     }
 
-    return rstArry;
+    return result;
   }
 }
