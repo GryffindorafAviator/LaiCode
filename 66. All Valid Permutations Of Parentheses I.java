@@ -1,13 +1,13 @@
-Medium
-Given N pairs of parentheses “()”, return a list with all the valid permutations.
+// Medium
+// Given N pairs of parentheses “()”, return a list with all the valid permutations.
 
-Assumptions
+// Assumptions
 
-N > 0
-Examples
+// N > 0
+// Examples
 
-N = 1, all valid permutations are ["()"]
-N = 3, all valid permutations are ["((()))", "(()())", "(())()", "()(())", "()()()"]
+// N = 1, all valid permutations are ["()"]
+// N = 3, all valid permutations are ["((()))", "(()())", "(())()", "()(())", "()()()"]
 
 public class Solution {
   public List<String> validParentheses(int n) {
