@@ -1,13 +1,13 @@
-Medium
-Given a string with no duplicate characters, return a list with all permutations of the characters.
+// Medium
+// Given a string with no duplicate characters, return a list with all permutations of the characters.
 
-Assume that input string is not null.
+// Assume that input string is not null.
 
-Examples
+// Examples
 
-Set = “abc”, all permutations are [“abc”, “acb”, “bac”, “bca”, “cab”, “cba”]
+// Set = “abc”, all permutations are [“abc”, “acb”, “bac”, “bca”, “cab”, “cba”]
 
-Set = "", all permutations are [""]
+// Set = "", all permutations are [""]
 
 public class Solution {
   public List<String> permutations(String input) {
