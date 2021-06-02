@@ -10,6 +10,7 @@
 // A = {1, 2, 3}, the missing number is 4
 // A = {}, the missing number is 1
   
+// Solution 1
 public class Solution {
   public int missing(int[] array) {
     int N = array.length + 1;
@@ -25,5 +26,25 @@ public class Solution {
     }
 
     return rslt + N;
+  }
+}
+
+// Solution 2
+public class Solution {
+  public int missing(int[] array) {
+    int n = array.length + 1;
+    int[] record = new int[n];
+
+    for (int i = 0; i < n - 1; ++i) {
+      record[array[i] - 1] = 1; 
+    }
+
+    for (int i = 0; i < n - 1; ++i) {
+      if (record[i] == 0) {
+        return i + 1;
+      }  
+    }
+
+    return n;
   }
 }
