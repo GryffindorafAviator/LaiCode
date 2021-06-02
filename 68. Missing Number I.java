@@ -88,3 +88,30 @@ public class Solution {
     return xor;
   }
 }
+
+// Solution 5
+public class Solution {
+  public int missing(int[] array) {
+    int n = array.length + 1;
+
+    for (int i = 0; i < n - 1; ++i) {
+      while (array[i] != i + 1 && array[i] != n) {
+        swap(array, i, array[i] - 1);
+      }
+    }
+
+    for (int i = 0; i < n - 1; ++i) {
+      if (array[i] != i + 1) {
+        return i + 1;
+      }
+    }
+
+    return n;
+  }
+
+  private void swap (int[] array, int i, int j) {
+    int temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+}
