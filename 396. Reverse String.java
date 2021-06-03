@@ -21,7 +21,7 @@ public class Solution {
       --j;
     }
 
-    return new String(str, 0, str.length);
+    return new String(str);
   }
 
   private void swap(char[] str, int i, int j) {
