@@ -1,13 +1,13 @@
-Easy
-Given a string, remove all leading/trailing/duplicated empty spaces.
+// Easy
+// Given a string, remove all leading/trailing/duplicated empty spaces.
 
-Assumptions:
+// Assumptions:
 
-The given string is not null.
-Examples:
+// The given string is not null.
+// Examples:
 
-“  a” --> “a”
-“   I     love MTV ” --> “I love MTV”
+// “  a” --> “a”
+// “   I     love MTV ” --> “I love MTV”
 
 public class Solution {
   public String removeSpaces(String input) {
