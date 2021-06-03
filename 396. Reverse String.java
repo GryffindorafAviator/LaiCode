@@ -1,9 +1,9 @@
-Easy
-Reverse a given string.
+// Easy
+// Reverse a given string.
 
-Assumptions
+// Assumptions
 
-The given string is not null.
+// The given string is not null.
   
 public class Solution {
   public String reverse(String input) {
