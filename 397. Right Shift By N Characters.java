@@ -1,13 +1,13 @@
-Easy
-Right shift a given string by n characters.
+// Easy
+// Right shift a given string by n characters.
 
-Assumptions
+// Assumptions
 
-The given string is not null.
-n >= 0.
-Examples
+// The given string is not null.
+// n >= 0.
+// Examples
 
-"abc", 4 -> "cab"
+// "abc", 4 -> "cab"
   
 public class Solution {
   public String rightShift(String input, int n) {
