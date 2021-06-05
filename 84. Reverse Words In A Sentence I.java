@@ -1,19 +1,19 @@
-Medium
-Reverse the words in a sentence.
+// Medium
+// Reverse the words in a sentence.
 
-Assumptions
+// Assumptions
 
-Words are separated by single space
+// Words are separated by single space
 
-There are no heading or tailing white spaces
+// There are no heading or tailing white spaces
 
-Examples
+// Examples
 
-“I love Google” → “Google love I”
+// “I love Google” → “Google love I”
 
-Corner Cases
+// Corner Cases
 
-If the given string is null, we do not need to do anything.
+// If the given string is null, we do not need to do anything.
   
 public class Solution {
   public String reverseWords(String input) {
