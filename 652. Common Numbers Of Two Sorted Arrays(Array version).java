@@ -33,3 +33,42 @@ public class Solution {
     return common;
   }
 }
+
+// Solution 2
+public class Solution {
+  public List<Integer> common(int[] A, int[] B) {
+    List<Integer> common = new ArrayList<>();
+
+    if (A.length == 0 || B.length == 0) {
+      return common;
+    }
+
+    Map<Integer, Integer> hmA = new HashMap<>();
+    Map<Integer, Integer> hmB = new HashMap<>();
+
+    for (int num : A) {
+      hmA.put(num, hmA.getOrDefault(num, 0) + 1);
+    }
+
+    for (int num : B) {
+      hmB.put(num, hmB.getOrDefault(num, 0) + 1);
+    }
+
+    for (Map.Entry<Integer, Integer> entry : hmA.entrySet()) {
+      int cnt = 0;
+
+      if (hmB.get(entry.getKey()) != null) {
+        cnt = Math.min(hmA.get(entry.getKey()), hmB.get(entry.getKey()));
+      }
+
+      for (int i = 0; i < cnt; ++i) {
+        common.add(entry.getKey());
+      }
+    }
+
+    Collections.sort(common);
+
+    return common;
+  }
+}
+
