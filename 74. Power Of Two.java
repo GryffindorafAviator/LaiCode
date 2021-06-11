@@ -8,6 +8,7 @@
 // 0 is not
 // -1 is not
 
+// Solution 1
 public class Solution {
   public boolean isPowerOfTwo(int number) {
     if (number < 0) {
@@ -22,5 +23,12 @@ public class Solution {
     }
 
     return cnt == 1;
+  }
+}
+
+// Solution 2
+public class Solution {
+  public boolean isPowerOfTwo(int number) {
+    return (number > 0) && ((number & (number - 1)) == 0);
   }
 }
