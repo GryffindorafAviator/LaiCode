@@ -28,3 +28,22 @@ public class Solution {
     return true;
   }
 }
+
+// Solution 2
+public class Solution {
+  public boolean allUnique(String word) {
+    boolean[] booArr = new boolean[256];
+
+    for (int i = 0; i < word.length(); ++i) {
+      int index = word.charAt(i);
+
+      if (booArr[index]) {
+        return false;
+      }
+
+      booArr[index] = true;
+    }
+
+    return true;
+  }
+}
