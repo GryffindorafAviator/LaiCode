@@ -47,3 +47,21 @@ public class Solution {
     return true;
   }
 }
+
+// Solution 3
+public class Solution {
+  public boolean allUnique(String word) {
+    int[] vec = new int[8];
+    char[] str = word.toCharArray();
+
+    for (char ch : str) {
+      if (((vec[(ch / 32)] >> (ch % 32)) & 1) != 0) {
+        return false;
+      }
+
+      vec[ch / 32] |= (1 << (ch % 32));
+    }
+
+    return true;
+  }
+}
