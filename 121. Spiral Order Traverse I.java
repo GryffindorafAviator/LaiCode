@@ -28,7 +28,7 @@ public class Solution {
     helper(matrix, size, 0, ans);
 
     return ans;
-    }
+  }
 
   private void helper(int[][] matrix, int size, int offset, List<Integer> ans) {
     if (size / 2 == offset) {
