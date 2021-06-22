@@ -49,3 +49,42 @@ public class Solution {
     }
   }
 }
+
+
+// Solution 2
+public class Solution {
+  public boolean match(String input, String pattern) {
+    if (input == null && pattern == null) {
+      return true;
+    }
+
+    return helper(input, pattern, 0, 0);
+  }
+
+  private boolean helper(String s, String t, int si, int ti) {
+    if (si == s.length() && ti == t.length()) {
+      return true;
+    }
+    
+    if (si >= s.length() || ti >= t.length()) {
+      return false;
+    }
+
+    if (t.charAt(ti) > '9') {
+      if (t.charAt(ti) == s.charAt(si)) {
+        return helper(s, t, si + 1, ti + 1);
+      }
+
+      return false;
+    }
+
+    int cnt = 0;
+
+    while (ti < t.length() && '0' <= t.charAt(ti) && t.charAt(ti) <= '9') {
+      cnt = cnt * 10 + (t.charAt(ti) - '0');
+      ++ti;
+    }
+    
+    return helper(s, t, si + cnt, ti);
+  }
+}
