@@ -1,14 +1,14 @@
-Easy
-Given an unsorted array, find the length of the longest subarray in which the numbers are in ascending order.
+// Easy
+// Given an unsorted array, find the length of the longest subarray in which the numbers are in ascending order.
 
-Assumptions
+// Assumptions
 
-The given array is not null
-Examples
+// The given array is not null
+// Examples
 
-{7, 2, 3, 1, 5, 8, 9, 6}, longest ascending subarray is {1, 5, 8, 9}, length is 4.
+// {7, 2, 3, 1, 5, 8, 9, 6}, longest ascending subarray is {1, 5, 8, 9}, length is 4.
 
-{1, 2, 3, 3, 4, 4, 5}, longest ascending subarray is {1, 2, 3}, length is 3.
+// {1, 2, 3, 3, 4, 4, 5}, longest ascending subarray is {1, 2, 3}, length is 3.
   
 public class Solution {
   public int longest(int[] array) {
@@ -39,3 +39,5 @@ public class Solution {
     return globalMax;
   }
 }
+
+// TC: O(n), SC: O(n)
