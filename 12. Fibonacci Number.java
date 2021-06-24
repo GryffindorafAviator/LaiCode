@@ -51,3 +51,27 @@ public class Solution {
 // TC: O(）
 
 // Solution 2
+public class Solution {
+  public long fibonacci(int K) {
+    if (K <= 0) {
+      return 0L;
+    }
+
+    if (K == 1) {
+      return 1L;
+    }
+
+    long a = 0L;
+    long b = 1L;
+
+    while (K > 1) {
+      long temp = a + b;
+      a = b;
+      b = temp;
+      --K; 
+    }
+
+    return b;
+  }
+}
+// TC: O(n), SC: O(1)
