@@ -74,4 +74,29 @@ public class Solution {
     return b;
   }
 }
-// TC: O(n), SC: O(1)
+// TC: O(K), SC: O(1)
+
+// Solution 3
+public class Solution {
+  public long fibonacci(int K) {
+    if (K <= 0) {
+      return 0L;
+    }
+
+    if (K == 1) {
+      return 1L;
+    }
+
+    long[] fib = new long[K + 1];
+
+    fib[0] = 0L;
+    fib[1] = 1L;
+
+    for (int i = 2; i <= K; ++i) {
+      fib[i] = fib[i - 1] + fib[i - 2];
+    }
+
+    return fib[K];
+  }
+}
+// TC: O(K), SC: O(K)
