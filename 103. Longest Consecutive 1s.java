@@ -1,13 +1,14 @@
-Easy
-Given an array containing only 0s and 1s, 
-find the length of the longest subarray of consecutive 1s.
+// Easy
+// Given an array containing only 0s and 1s, 
+// find the length of the longest subarray of consecutive 1s.
 
-Assumptions
+// Assumptions
 
-The given array is not null
-Examples
+// The given array is not null
+// Examples
 
-{0, 1, 0, 1, 1, 1, 0}, the longest consecutive 1s is 3.
+// {0, 1, 0, 1, 1, 1, 0}, 
+// the longest consecutive 1s is 3.
   
 public class Solution {
   public int longest(int[] array) {
@@ -30,3 +31,5 @@ public class Solution {
     return glbMax;
   }
 }
+
+// TC: O(n), SC: O(1)
