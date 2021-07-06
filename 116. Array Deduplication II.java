@@ -15,7 +15,7 @@
 
 public class Solution {
   public int[] dedup(int[] array) {
-    if (array == null || array.length < 2) {
+    if (array == null || array.length < 3) {
       return array;
     }
 
