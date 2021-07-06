@@ -46,3 +46,5 @@ public class Solution {
     return result;
   }
 }
+
+// TC: O(n^3), SC: O(n).
