@@ -46,6 +46,7 @@
  *   }
  * }
  */
+
 public class Solution {
   public List<Integer> zigZag(TreeNode root) {
     if (root == null) {
