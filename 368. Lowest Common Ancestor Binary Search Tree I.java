@@ -37,6 +37,7 @@
  * }
  */
 
+// Solution 1
 public class Solution {
   public TreeNode lca(TreeNode root, int p, int q) {
     if (root == null || root.key == p || root.key == q) {
@@ -56,3 +57,37 @@ public class Solution {
 }
 
 // TC: O(n), SC: O(1).
+
+// Solution 2
+/**
+ * public class TreeNode {
+ *   public int key;
+ *   public TreeNode left;
+ *   public TreeNode right;
+ *   public TreeNode(int key) {
+ *     this.key = key;
+ *   }
+ * }
+ */
+public class Solution {
+  public TreeNode lca(TreeNode root, int p, int q) {
+    int small = Math.min(p, q);
+    int large = Math.max(p, q);
+
+    while (root != null) {
+      if (root.key < small) {
+        root = root.right;
+      }
+      else if (root.key > large) {
+        root = root.left;
+      }
+      else {
+        return root;
+      }
+    }
+
+    return null;
+  }
+}
+
+// TC: O(logn), SC: O(1).
