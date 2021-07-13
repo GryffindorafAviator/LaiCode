@@ -39,3 +39,20 @@ public class Solution {
 }
 // TC: O(n), SC: O(1)
 
+// Solution 2
+public class Solution {
+  public boolean existSum(int[] array, int target) {
+    Set<Integer> set = new HashSet<>();
+
+    for (int num : array) {
+      if (set.contains(target - num)) {
+        return true;
+      }
+
+      set.add(num);
+    }
+
+    return false;
+  }
+}
+// TC: O(n), SC: O(n)
