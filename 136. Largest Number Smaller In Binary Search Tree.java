@@ -45,6 +45,7 @@
 
 //     4
 
+// Solution 1
 /**
  * public class TreeNode {
  *   public int key;
@@ -77,3 +78,32 @@ public class Solution {
 }
 
 // TC: O(height), SC: O(1)
+
+// Solution 2
+/**
+ * public class TreeNode {
+ *   public int key;
+ *   public TreeNode left;
+ *   public TreeNode right;
+ *   public TreeNode(int key) {
+ *     this.key = key;
+ *   }
+ * }
+ */
+public class Solution {
+  public int largestSmaller(TreeNode root, int target) {
+    int result = Integer.MIN_VALUE;
+
+    while (root != null) {
+      if (root.key < target) {
+        result = root.key;
+        root = root.right;
+      }
+      else {
+        root = root.left;
+      }
+    }
+
+    return result;
+  }
+}
