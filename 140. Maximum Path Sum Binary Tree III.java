@@ -97,3 +97,38 @@ public class Solution {
 }
 // TC: O(n^2), SC: O(n)
 
+// Solution 2
+/**
+ * public class TreeNode {
+ *   public int key;
+ *   public TreeNode left;
+ *   public TreeNode right;
+ *   public TreeNode(int key) {
+ *     this.key = key;
+ *   }
+ * }
+ */
+public class Solution {
+  public int maxPathSum(TreeNode root) {
+    int[] max = new int[]{Integer.MIN_VALUE};
+
+    helperMax(root, max);
+
+    return max[0];
+  }
+
+  private int helperMax(TreeNode root, int[] max) {
+    if (root == null) {
+      return 0;
+    }
+
+    int left = helperMax(root.left, max);
+    int right = helperMax(root.right, max);
+    int temp = Math.max(Math.max(left, right), 0) + root.key;
+
+    max[0] = Math.max(max[0], temp);
+
+    return temp;
+  }
+}
+// TC: O(n), SC: O(1)
