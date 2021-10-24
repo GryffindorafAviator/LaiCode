@@ -53,3 +53,32 @@ public class Solution {
 }
 
 // TC: O(n^3); SC: O(n)
+
+// Solution2
+public class Solution {
+  public int minCuts(String input) {
+    if (input == null || input.length() == 0) {
+      return 0;
+    }
+
+    int len = input.length();
+    int[] minCut = new int[len];
+    boolean[][] isPalin = new boolean[len][len];
+
+    for (int i = 0; i < len; ++i) {
+      minCut[i] = i;
+
+      for (int j = 0; j <= i; ++j) {
+        if (input.charAt(i) == input.charAt(j) && (i - j < 3 || isPalin[i - 1][j + 1])) {
+          isPalin[i][j] = true;
+
+          minCut[i] = j == 0 ? 0 : Math.min(minCut[i], minCut[j - 1] + 1);
+        } 
+      }
+    }
+
+    return minCut[len - 1]; 
+  }
+}
+
+// TC: O(n^2); SC: O(n^2)
