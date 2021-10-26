@@ -82,3 +82,32 @@ public class Solution {
 }
 
 // TC: O(n^2); SC: O(n^2)
+
+// Solution 3
+public class Solution {
+  public int minCuts(String input) {
+    if (input == null || input.length() == 0) {
+      return 0;
+    }
+
+    int len = input.length();
+    int[] cutCnt = new int[len + 1];
+
+    for (int i = 0; i <= len; ++i) {
+      cutCnt[i] = i - 1;
+    }
+
+    for (int i = 0; i < len; ++i) {
+      for (int j = 0; i - j >= 0 && i + j < len && input.charAt(i - j) == input.charAt(i + j); ++j) {
+        cutCnt[i + j + 1] = Math.min(cutCnt[i + j + 1], cutCnt[i - j] + 1);
+      }
+
+      for (int j = 0; i - j - 1 >= 0 && i + j < len && input.charAt(i - j - 1) == input.charAt(i + j); ++j) {
+        cutCnt[i + j + 1] = Math.min(cutCnt[i + j + 1], cutCnt[i - j - 1] + 1);
+      }
+    }
+
+    return cutCnt[len];
+  }
+}
+// TC: O(n^2); SC: O(n) 
