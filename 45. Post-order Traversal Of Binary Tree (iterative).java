@@ -93,3 +93,47 @@ public class Solution {
 
 // TC: O(n); 
 // SC: avg, O(logn); worst, O(n)
+
+// Solution 2
+/**
+ * public class TreeNode {
+ *   public int key;
+ *   public TreeNode left;
+ *   public TreeNode right;
+ *   public TreeNode(int key) {
+ *     this.key = key;
+ *   }
+ * }
+ */
+public class Solution {
+  public List<Integer> postOrder(TreeNode root) {
+    List<Integer> ans = new ArrayList<>();
+
+    if (root == null) {
+      return ans;
+    }
+
+    Deque<TreeNode> stack = new ArrayDeque<>();
+
+    stack.offerFirst(root);
+
+    while (!stack.isEmpty()) {
+      TreeNode cur = stack.pollFirst();
+      ans.add(cur.key);
+
+      if (cur.left != null) {
+        stack.offerFirst(cur.left);
+      }
+
+      if (cur.right != null) {
+        stack.offerFirst(cur.right);
+      }
+    }
+
+    Collections.reverse(ans);
+
+    return ans;
+  }
+}
+
+//  TC: O(n); SC: O(logn)
