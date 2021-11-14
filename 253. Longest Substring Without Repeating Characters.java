@@ -6,7 +6,7 @@
 // For example, the longest substring without repeating letters for "bcdfbd" is "bcdf", 
 // we should return 4 in this case.
   
-// Solution
+// Solution 1
 
 public class Solution {
   public int longest(String input) {
@@ -37,3 +37,38 @@ public class Solution {
 }
 
 // TC: O(n); SC: O(n)
+
+// Solution 2
+public class Solution {
+  public int longest(String input) {
+    int maxCnt = 0;
+
+    if (input == null || input.length() == 0) {
+      return maxCnt;
+    }
+
+    int fast = 0;
+    int slow = 0;
+    Set<Character> set = new HashSet<>();
+
+    while (fast < input.length()) {
+      char chF = input.charAt(fast);
+
+      if (set.contains(chF)) {
+        char chS = input.charAt(slow);
+
+        set.remove(chS);
+        slow++;
+      }
+      else {
+        set.add(chF);
+        maxCnt = Math.max(maxCnt, set.size());
+        fast++;
+      }
+    }
+
+    return maxCnt;
+  }
+}
+
+// TC: O(n^2); SC: O(n)
