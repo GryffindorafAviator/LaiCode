@@ -13,6 +13,7 @@
 // Corner Cases
 // What if A is null or A is of zero length? We should return -1 in this case.
 
+// Solution 1
 public class Solution {
   public int closest(int[] array, int target) {
     if (array == null || array.length == 0) {
@@ -55,7 +56,7 @@ public class Solution {
   }
 }
 
-// Solution
+// Solution 2
 public class Solution {
   public int closest(int[] array, int target) {
     if (array == null || array.length == 0) {
