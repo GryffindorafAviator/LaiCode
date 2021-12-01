@@ -13,6 +13,7 @@
 // Corner Cases
 // What if A is null or A of zero length? We should return -1 in this case.
 
+// Solution
 public class Solution {
   public int firstOccur(int[] array, int target) {
     if (array == null || array.length == 0) {
