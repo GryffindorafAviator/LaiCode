@@ -12,6 +12,7 @@
 // What if the given array is null? In this case, we do not need to do anything.
 // What if the given array is of length zero? In this case, we do not need to do anything.
 
+// Solution
 public class Solution {
   public int[] mergeSort(int[] array) {
     if (array == null || array.length <= 1) {
