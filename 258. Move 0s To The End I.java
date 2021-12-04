@@ -9,6 +9,7 @@
 // {1} --> {1}
 // {1, 0, 3, 0, 1} --> {1, 3, 1, 0, 0} or {1, 1, 3, 0, 0} or {3, 1, 1, 0, 0}
 
+// Solution
 public class Solution {
   public int[] moveZero(int[] array) {
     if (array.length == 0) {
