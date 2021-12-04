@@ -16,6 +16,7 @@
 // What if the input array is of length zero? 
 // In this case, we should not do anything as well.
 
+// Solution
 public class Solution {
   public int[] rainbowSort(int[] array) {
     if (array.length <= 1) {
