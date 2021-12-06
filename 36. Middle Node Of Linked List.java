@@ -8,6 +8,7 @@
 // L = 1 -> 2 -> 3 -> null, return 2
 // L = 1 -> 2 -> 3 -> 4 -> null, return 2
 
+// Solution
 /**
  * class ListNode {
  *   public int value;
