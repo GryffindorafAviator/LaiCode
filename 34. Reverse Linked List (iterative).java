@@ -6,6 +6,7 @@
 // L = 1 -> null, return 1 -> null
 // L = 1 -> 2 -> 3 -> null, return 3 -> 2 -> 1 -> null
 
+// Solution 1
 /**
  * class ListNode {
  *   public int value;
@@ -16,6 +17,7 @@
  *   }
  * }
  */
+
 public class Solution {
   public ListNode reverse(ListNode head) {
     if (head == null || head.next == null) {
@@ -39,7 +41,7 @@ public class Solution {
   }
 }
 
-// Solution
+// Solution 2
 /**
  * class ListNode {
  *   public int value;
