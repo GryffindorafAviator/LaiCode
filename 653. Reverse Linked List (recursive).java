@@ -6,6 +6,7 @@
 // L = 1 -> null, return 1 -> null
 // L = 1 -> 2 -> 3 -> null, return 3 -> 2 -> 1 -> null
 
+// Solution
 /**
  * class ListNode {
  *   public int value;
