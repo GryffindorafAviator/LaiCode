@@ -7,6 +7,7 @@
 // L1 = null, L2 = 1 -> 2 -> null, merge L1 and L2 to 1 -> 2 -> null
 // L1 = null, L2 = null, merge L1 and L2 to null
 
+// Solution
 /**
  * class ListNode {
  *   public int value;
