@@ -7,6 +7,7 @@
 // L = 1 -> 3 -> 5 -> null, insert 3, return 1 -> 3 -> 3 -> 5 -> null
 // L = 2 -> 3 -> null, insert 1, return 1 -> 2 -> 3 -> null
 
+// Solution
 /**
  * class ListNode {
  *   public int value;
