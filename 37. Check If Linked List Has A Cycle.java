@@ -1,11 +1,12 @@
-Easy
-Check if a given linked list has a cycle. 
-Return true if it does, 
-otherwise return false.
+// Easy
+// Check if a given linked list has a cycle. 
+// Return true if it does, 
+// otherwise return false.
 
-Assumption:
-You can assume there is no duplicate value appear in the linked list.
+// Assumption:
+// You can assume there is no duplicate value appear in the linked list.
 
+// Solution
 /**
  * class ListNode {
  *   public int value;
