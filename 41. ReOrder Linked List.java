@@ -7,6 +7,7 @@
 // L = 1 -> 2 -> 3 -> 4 -> null, is reordered to 1 -> 4 -> 2 -> 3 -> null
 // L = 1 -> 2 -> 3 -> null, is reordred to 1 -> 3 -> 2 -> null
   
+// Solution
   /**
  * class ListNode {
  *   public int value;
