@@ -26,7 +26,7 @@
 
 // 1      5
   
-// Solution 1, Recursion
+// Solution 1, recursion
 /**
  * public class TreeNode {
  *   public int key;
@@ -55,3 +55,40 @@ public class Solution {
 }
 
 // TC: O(n); SC: O(n)
+
+// Solution 2, iteration
+/**
+ * public class TreeNode {
+ *   public int key;
+ *   public TreeNode left;
+ *   public TreeNode right;
+ *   public TreeNode(int key) {
+ *     this.key = key;
+ *   }
+ * }
+ */
+public class Solution {
+  public TreeNode reverse(TreeNode root) {
+    if (root == null || root.left == null) {
+      return root;
+    }
+ 
+    TreeNode prev = null;
+    TreeNode prevRight = null;
+
+    while (root != null) {
+      TreeNode next = root.left;
+      TreeNode right = root.right;
+
+      root.left = prev;
+      root.right = prevRight;
+      prevRight = right;
+      prev = root;
+      root = next;
+    }
+
+    return prev;
+  }
+}
+
+// TC: O(n); SC: O(1)
