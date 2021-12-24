@@ -69,7 +69,6 @@ public class Solution {
     return dummyHead.next;
   }
 }
-
 // TC: O(n); SC: O(1)
 
 // Solution 2
@@ -108,5 +107,4 @@ public class Solution {
     return dummy.next;
   }
 }
-
 // TC: O(n); SC: O(1)
