@@ -69,5 +69,4 @@ public class Solution {
     return prev;
   }
 }
-
 // TC: O(n); SC: O(1)
