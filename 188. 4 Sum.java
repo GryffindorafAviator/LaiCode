@@ -44,3 +44,80 @@ public class Solution {
   }
 }
 // TC: O(n^3); SC: O(1)
+
+// Solution 2
+public class Solution {
+  static class Element implements Comparable<Element> {
+    int left;
+    int right;
+    int sum;
+
+    Element(int left, int right, int sum) {
+      this.left = left;
+      this.right = right;
+      this.sum = sum;
+    }
+
+    @Override
+    public int compareTo(Element another) {
+      if (this.sum != another.sum) {
+        return this.sum < another.sum ? -1 : 1;
+      }
+      else if (this.right != another.right) {
+        return this.right < another.right ? -1 : 1;
+      }
+      else if (this.left != another.left) {
+        return this.left < another.left ? -1 : 1;
+      }
+
+      return 0;
+    }
+  }
+
+  public boolean exist(int[] array, int target) {
+    if (array == null || array.length < 4) {
+      return false;
+    }
+
+    Arrays.sort(array);
+
+    Element[] pairSum = getPairSum(array);
+    Arrays.sort(pairSum); // O(n^2 * 2 * logn)
+
+    int left = 0;
+    int right = pairSum.length - 1;
+
+    while (left < right) {
+      int tempSum = pairSum[left].sum + pairSum[right].sum;
+
+      if (tempSum == target && pairSum[left].right < pairSum[right].left) {
+        return true;
+      }
+      else if (tempSum < target) {
+        left++;
+      }
+      else {
+        right--;
+      }
+    }
+
+    return false;
+  }
+
+  private Element[] getPairSum(int[] array) {
+    int len = array.length;
+
+    Element[] pairSum = new Element[len * (len - 1) / 2];
+    int cur = 0;
+
+    for (int j = 1; j < len; j++) {
+      for (int i = 0; i < j; i++) {
+        pairSum[cur] = new Element(i, j, array[i] + array[j]);
+        cur++;
+      }
+    }
+
+    return pairSum;
+  }
+}
+// TC: O(n^2 * logn); SC: O(n^2)
