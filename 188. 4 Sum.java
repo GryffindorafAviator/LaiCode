@@ -121,3 +121,41 @@ public class Solution {
   }
 }
 // TC: O(n^2 * logn); SC: O(n^2)
+
+// Solution 3
+public class Solution {
+  static class Pair {
+    int left;
+    int right;
+
+    Pair(int left, int right) {
+      this.left = left;
+      this.right = right;
+    }
+  }
+
+  public boolean exist(int[] array, int target) {
+    if (array == null || array.length < 4) {
+      return false;
+    }
+
+    Map<Integer, Pair> hm = new HashMap<>();
+
+    for (int j = 1; j < array.length; j++) {
+      for (int i = 0; i < j; i++) {
+        int tempSum = array[i] + array[j];
+
+        if (hm.containsKey(target - tempSum) && hm.get(target - tempSum).right < i) {
+          return true;
+        }
+
+        if (!hm.containsKey(tempSum)) {
+          hm.put(tempSum, new Pair(i, j));
+        }
+      }
+    }
+
+    return false;
+  }
+}
+// TC: O(n^2); SC: O(n^2)
