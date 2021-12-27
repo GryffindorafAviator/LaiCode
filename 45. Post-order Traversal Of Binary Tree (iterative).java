@@ -90,7 +90,6 @@ public class Solution {
     return ans;
   }
 }
-
 // TC: O(n); 
 // SC: avg, O(logn); worst, O(n)
 
@@ -135,5 +134,4 @@ public class Solution {
     return ans;
   }
 }
-
 //  TC: O(n); SC: O(logn)
