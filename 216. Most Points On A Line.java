@@ -27,8 +27,7 @@ public class Solution {
     }
 
     int max = 0;
-    
-    
+  
     for (int i = 0; i < points.length; i++) {
       int same = 1;
       int sameX = 0;
