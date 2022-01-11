@@ -89,3 +89,5 @@ public class Solution {
     return cnt == numCourses ? topologicalOrder : new int[] {};
   }
 }
+
+// TC: O(V + E); SC: O(V + E)
