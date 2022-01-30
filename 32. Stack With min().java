@@ -8,6 +8,7 @@
 // top() - return the top element without remove it, if the stack is empty, return -1
 // min() - return the current min value in the stack.
 
+// Solution
 public class Solution {
   private Deque<Integer> s;
   private Deque<Integer> sMin;
