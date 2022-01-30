@@ -14,6 +14,7 @@
 // isEmpty() should return true if there is no element buffered in the queue, 
 // false otherwise.
 
+// Solution
 public class Solution {
   private LinkedList<Integer> in;
   private LinkedList<Integer> out;
