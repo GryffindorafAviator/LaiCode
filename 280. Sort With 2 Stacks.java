@@ -10,7 +10,8 @@
 // Requirements:
 
 // No additional memory, time complexity = O(n ^ 2).
-  
+ 
+// Solution
 public class Solution {
   public void sort(LinkedList<Integer> s1) {
     LinkedList<Integer> s2 = new LinkedList<Integer>();
