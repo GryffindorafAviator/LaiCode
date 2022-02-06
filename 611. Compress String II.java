@@ -86,4 +86,5 @@ public class Solution {
     return len;
   }
 }
-// TC: O(n); SC: O(n) (but the new char array is not necessary therefore SC can be O(1)
+// TC: O(n); SC: O(n) 
+// The new char array is not necessary therefore SC can be O(1).
