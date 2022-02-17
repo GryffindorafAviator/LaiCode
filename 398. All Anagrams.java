@@ -32,7 +32,7 @@ public class Solution {
         map.put(ch, cnt - 1);
 
         if (cnt == 1) {
-          ++match;
+          match++;
         }
       }
 
@@ -44,7 +44,7 @@ public class Solution {
           map.put(ch, cnt + 1);
 
           if (cnt == 0) {
-            --match;
+            match--;
           }
         }
       }
