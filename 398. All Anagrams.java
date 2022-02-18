@@ -12,7 +12,6 @@
 // return [0, 3] since the substring with length 2 starting from index 0/3 are all anagrams of "ab" ("ab", "ba").
   
 // Solution
-
 public class Solution {
   public List<Integer> allAnagrams(String sh, String lo) {
     List<Integer> ans = new ArrayList<>();
