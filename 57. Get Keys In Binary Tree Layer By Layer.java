@@ -1,5 +1,6 @@
 // Easy
-// Get the list of list of keys in a given binary tree layer by layer. Each layer is represented by a list of keys and the keys are traversed from left to right.
+// Get the list of list of keys in a given binary tree layer by layer. 
+// Each layer is represented by a list of keys and the keys are traversed from left to right.
 
 // Examples
 
@@ -36,6 +37,7 @@
 
 //     4
 
+// Solution
 /**
  * public class TreeNode {
  *   public int key;
