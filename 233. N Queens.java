@@ -51,6 +51,7 @@ public class Solution {
 
     for (int j = 0; j < row; ++j) {
       int column = cur.get(j);
+      
       if (i == column || Math.abs(column - i) == row - j) {
         return false;
       }
