@@ -19,7 +19,6 @@
 // the Queen on the third row is at y index 3 and the Queen on the fourth row is at y index 1.
   
 // Solution 1
-  
 public class Solution {
   public List<List<Integer>> nqueens(int n) {
     List<List<Integer>> result = new ArrayList<>();
