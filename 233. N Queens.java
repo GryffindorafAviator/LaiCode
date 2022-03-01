@@ -59,5 +59,5 @@ public class Solution {
     return true;
   }
 }
-
-// The time complexicity for vilidation is O(n).
+// TC: O(n^(n+1)); SC: O(n)
+// The time complexity for validation is O(n).
