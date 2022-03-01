@@ -59,5 +59,5 @@ public class Solution {
     return true;
   }
 }
-// TC: O(n^(n+1)); SC: O(n)
+// TC: O(n!); SC: O(n)
 // The time complexity for validation is O(n).
