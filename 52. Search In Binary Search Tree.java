@@ -7,6 +7,7 @@
 
 // There are no duplicate keys in the binary search tree
 
+// Solution
 /**
  * public class TreeNode {
  *   public int key;
