@@ -46,7 +46,7 @@
 
 //     4
 
-// Solution
+// Solution 1
 /**
  * public class TreeNode {
  *   public int key;
@@ -86,7 +86,7 @@ public class Solution {
   }
 }
 
-// Solution
+// Solution 2
 /**
  * public class TreeNode {
  *   public int key;
