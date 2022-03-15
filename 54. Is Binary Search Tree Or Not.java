@@ -7,7 +7,8 @@
 // Corner Cases
 
 // What if the binary tree is null? Return true in this case.
-  
+ 
+// Solution
 /**
  * public class TreeNode {
  *   public int key;
