@@ -14,7 +14,6 @@
 // the largest product is 5 * 2 = 10 (by choosing “abcde” and “xy”)
 
 // Solution
-
 public class Solution {
   public int largestProduct(String[] dict) {
     Map<String, Integer> bitMap = getBitMask(dict);
@@ -69,5 +68,4 @@ public class Solution {
     return bitMap;
   }
 }
-
 // TC: O(n^2); SC: O(n)
