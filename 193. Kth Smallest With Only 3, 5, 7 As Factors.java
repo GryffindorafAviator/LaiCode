@@ -13,7 +13,6 @@
 // the 5th smallest is 3 ^ 3 * 5 * 7 = 945
   
 // Solution
-
 public class Solution {
   public long kth(int k) {
     PriorityQueue<Long> minHeap = new PriorityQueue<>();
@@ -43,5 +42,4 @@ public class Solution {
     return minHeap.peek();
   }
 }
-
 // TC: O(klogk); SC: O(k)
