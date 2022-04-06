@@ -13,27 +13,31 @@
 
 // {2, 1, 1, 0, 2}, we are not able to reach the end of array
 
+// Solution
 public class Solution {
   public boolean canJump(int[] array) {
-    boolean[] dp = new boolean[array.length];
+    if (array.length == 1) {
+      return true;
+    }
+    // boolean[] dp = new boolean[array.length];
+    boolean ans = true;
 
     int trueIndex = array.length - 1;
 
-    for (int i = array.length - 1; i >= 0; --i) {
+    for (int i = trueIndex - 1; i >= 0; i--) {
       if (array[i] >= trueIndex - i) {
-        dp[i] = true;
+        ans = true;
 
         if (i < trueIndex) {
           trueIndex = i;
         }
       }
       else {
-        dp[i] = false;
+        ans = false;
       }
     }
 
-    return dp[0];
+    return ans;
   }
 }
-
 // TC: O(n), SC: O(n)
