@@ -100,3 +100,58 @@ public class Solution {
   }
 }
 // TC: O(a.len + b.len + c.len); SC: O(1)
+
+// Solution 3
+public class Solution {
+  public List<Integer> common(int[] a, int[] b, int[] c) {
+    if (a == null || b == null || c == null) {
+      return null;
+    }
+
+    int lenA = a.length;
+    int lenB = b.length;
+    int lenC = c.length;
+    List<Integer> ans = new ArrayList<>();
+
+    if (lenA == 0 || lenB == 0 || lenC == 0) {
+      return ans;
+    }
+
+    int i = 0;
+    int j = 0;
+    int k = 0;
+
+    while (i < lenA && j < lenB && k < lenC) {
+      if (a[i] == b[j] && a[i] == c[k]) {
+        ans.add(a[i]);
+        i++;
+        j++;
+        k++;
+      }
+      else if (a[i] < b[j] && a[i] < c[k]) {
+        i++;
+      }
+      else if (b[j] < a[i] && b[j] < c[k]) {
+        j++;
+      }
+      else if (c[k] < b[j] && c[k] < a[i]) {
+        k++;
+      }
+      else if (a[i] > b[j] && a[i] > c[k]) {
+        j++;
+        k++;
+      }
+      else if (b[j] > a[i] && b[j] > c[k]) {
+        i++;
+        k++;
+      }
+      else if (c[k] > b[j] && c[k] > a[i]) {
+        i++;
+        j++;
+      }
+    }
+
+    return ans;
+  }
+}
+// TC: O(a.len + b.len + c.len); SC: O(1)
