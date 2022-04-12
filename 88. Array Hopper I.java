@@ -41,4 +41,4 @@ public class Solution {
     return ans;
   }
 }
-// TC: O(n), SC: O(n)
+// TC: O(n), SC: O(1)
