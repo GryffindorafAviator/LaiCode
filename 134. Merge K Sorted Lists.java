@@ -52,6 +52,5 @@ public class Solution {
     return dummy.next;
   }
 }
-
 // TC: O(nk*log(k)); SC: O(k)
 // k = listOfLists.len; n = list.len
