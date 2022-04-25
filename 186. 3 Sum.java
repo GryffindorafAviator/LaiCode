@@ -12,6 +12,7 @@
 // target = 8, 
 // return [[1, 3, 4], [2, 2, 4]]
 
+// Solution
 public class Solution {
   public List<List<Integer>> allTriples(int[] array, int target) {
     List<List<Integer>> ans = new ArrayList<>();
