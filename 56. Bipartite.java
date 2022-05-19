@@ -35,10 +35,10 @@
  */
 public class Solution {
   public boolean isBipartite(List<GraphNode> graph) {
-    HashMap<GraphNode, Integer> visted = new HashMap<>();
+    HashMap<GraphNode, Integer> visited = new HashMap<>();
 
     for (GraphNode node : graph) {
-      if (!BFS(node, visted)) {
+      if (!BFS(node, visited)) {
         return false;
       }
     }
@@ -46,8 +46,8 @@ public class Solution {
     return true;
   }
 
-  private boolean BFS(GraphNode node, HashMap<GraphNode, Integer> visted) {
-    if (visted.containsKey(node)) {
+  private boolean BFS(GraphNode node, HashMap<GraphNode, Integer> visited) {
+    if (visited.containsKey(node)) {
       return true;
     }
 
@@ -58,15 +58,15 @@ public class Solution {
 
     while (!q.isEmpty()) {
       node = q.poll();
-      int curGroup = visted.get(node);
+      int curGroup = visited.get(node);
       int neiGroup = curGroup == 0 ? 1 : 0;
 
       for (GraphNode nei : node.neighbors) {
-        if (!visted.containsKey(nei)) {
-          visted.put(nei, neiGroup);
+        if (!visited.containsKey(nei)) {
+          visited.put(nei, neiGroup);
           q.offer(nei);
         } 
-        else if (visted.get(nei) != neiGroup) {
+        else if (visited.get(nei) != neiGroup) {
           return false;
         }
       }
