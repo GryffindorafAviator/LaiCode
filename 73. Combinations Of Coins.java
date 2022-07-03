@@ -28,6 +28,7 @@
 
 // ]
 
+// Solution 1
 public class Solution {
   public List<List<Integer>> combinations(int target, int[] coins) {
     List<List<Integer>> result = new ArrayList<>();
@@ -55,5 +56,43 @@ public class Solution {
       combin.remove(combin.size() - 1);
     }
   }
+} 
+// TC: O(max(target / coins[i])^n); SC: O(n)
+
+// Solution 2
+public class Solution {
+  public List<List<Integer>> combinations(int target, int[] coins) {
+    if (coins == null || coins.length == 0) {
+      return null;
+    }
+
+    List<Integer> temp = new ArrayList<>();
+    List<List<Integer>> ans = new ArrayList<>();
+
+    dfs(target, coins, 0, 0, temp, ans);
+
+    return ans;
+  }
+
+  private void dfs(int target, int[] coins, int sum, int idx, List<Integer> temp, List<List<Integer>> ans) {
+    if (idx == coins.length) {
+      if (sum == target) {
+        List<Integer> addAns = new ArrayList<>(temp);
+        ans.add(addAns);
+      }
+
+      return;
+    }
+
+    for (int i = 0; i < target / coins[idx] + 1; i++) {
+      sum += i * coins[idx];
+      temp.add(i);
+
+      dfs(target, coins, sum, idx + 1, temp, ans);
+
+      sum -= i * coins[idx];
+      temp.remove(temp.size() - 1);
+    }
+  }
 }
- 
+// TC: O(max(target / coins[i])^n); SC: O(n)
