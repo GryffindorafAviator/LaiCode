@@ -1,40 +1,40 @@
-Easy
-Check if two given binary trees are identical. 
-Identical means the equal valued keys are at the same position in the two binary trees.
+// Easy
+// Check if two given binary trees are identical. 
+// Identical means the equal valued keys are at the same position in the two binary trees.
 
-Examples
-        5
+// Examples
+//         5
 
-      /    \
+//       /    \
 
-    3        8
+//     3        8
 
-and
+// and
 
-        5
+//         5
 
-      /    \
+//       /    \
 
-    3        8
+//     3        8
 
-are identical trees.
+// are identical trees.
 
-How is the binary tree represented?
+// How is the binary tree represented?
 
-We use the level order traversal sequence with a special symbol "#" denoting the null node.
+// We use the level order traversal sequence with a special symbol "#" denoting the null node.
 
-For Example:
-The sequence [1, 2, 3, #, #, 4] represents the following binary tree:
+// For Example:
+// The sequence [1, 2, 3, #, #, 4] represents the following binary tree:
 
-    1
+//     1
 
-  /   \
+//   /   \
 
- 2     3
+//  2     3
 
-      /
+//       /
 
-    4
+//     4
       
 // Solution
 /**
