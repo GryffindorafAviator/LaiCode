@@ -15,14 +15,10 @@ public class Solution {
     int min2 = Integer.MAX_VALUE;
 
     for (int i = 0; i < array.length; i++) {
-      if (array[i] == min1 || array[i] == min2) {
-        continue;
-      }
-
-      if (array[i] < min1) {
+      if (array[i] <= min1) {
         min1 = array[i];
       }
-      else if (array[i] < min2) {
+      else if (array[i] <= min2) {
         min2 = array[i];
       }
       else {
