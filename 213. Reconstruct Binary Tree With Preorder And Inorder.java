@@ -56,7 +56,6 @@
 public class Solution {
   public TreeNode reconstruct(int[] inOrder, int[] preOrder) {
     Map<Integer, Integer> inIndex = new HashMap<>();
-    
 
     for (int i = 0; i < inOrder.length; ++i) {
       inIndex.put(inOrder[i], i);
