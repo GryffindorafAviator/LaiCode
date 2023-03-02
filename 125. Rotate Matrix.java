@@ -41,4 +41,4 @@ public class Solution {
   }
 }
 
-// TC: O(), SC: O(1).
+// TC: O(n^2), SC: O(1).
