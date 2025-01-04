@@ -20,3 +20,40 @@
 #   0  -1   3   4
 
 # Solution
+from collections import deque
+
+class Solution(object):
+  def wallsAndGates(self, rooms):
+    """
+    input: int[][] rooms
+    return: int[][]
+    """
+    ROWS = len(rooms)
+    if ROWS == 0:
+      return rooms
+      
+    COLS = len(rooms[0])
+    DIRS = [[0, 1], [0, -1], [1, 0], [-1, 0]]
+
+    q = deque()
+
+    for i in range(ROWS):
+      for j in range(COLS):
+        if rooms[i][j] == 0:
+          q.append((i, j, 0))
+    
+    while len(q) > 0:
+      l = len(q)
+      for i in range(l):
+        cur = q.popleft()
+        dist = cur[2] + 1
+        for d in DIRS:
+          nxtr = cur[0] + d[0]
+          nxtc = cur[1] + d[1]
+          if (0 <= nxtr and nxtr < ROWS) and (0 <= nxtc and nxtc < COLS):
+            if rooms[nxtr][nxtc] == 2147483647:
+              rooms[nxtr][nxtc] = dist
+              q.append((nxtr, nxtc, dist)) 
+    
+    return rooms
+# TC: O(mn); SC: O(mn)
