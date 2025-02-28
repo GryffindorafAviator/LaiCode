@@ -4,7 +4,6 @@
 # Water can only flow in four directions (up, down, left, or right) from a cell to another one with height equal or lower.
 # Find the list of grid coordinates where water can flow to both the Pacific and Atlantic ocean. The order of returned grid coordinates does not matter.
 
-
 # Example:
 # Given the following 4 * 4 matrix:
 # Pacific   ~   ~    ~   ~
