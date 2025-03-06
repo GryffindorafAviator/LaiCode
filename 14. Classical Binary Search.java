@@ -1,9 +1,11 @@
 // Easy
-// Given a target integer T and an integer array A sorted in ascending order, find the index i such that A[i] == T or return -1 if there is no such index.
+// Given a target integer T and an integer array A sorted in ascending order, 
+// find the index i such that A[i] == T or return -1 if there is no such index.
 
 // Assumptions
 
-// There can be duplicate elements in the array, and you can return any of the indices i such that A[i] == T.
+// There can be duplicate elements in the array, 
+// and you can return any of the indices i such that A[i] == T.
   
 // Examples
 // A = {1, 2, 3, 4, 5}, T = 3, return 2
