@@ -1,8 +1,10 @@
 // Medium
-// Given a target integer T and an integer array A sorted in ascending order, find the index i in A such that A[i] is closest to T.
+// Given a target integer T and an integer array A sorted in ascending order, 
+// find the index i in A such that A[i] is closest to T.
 
 // Assumptions
-// There can be duplicate elements in the array, and we can return any of the indices with same value.
+// There can be duplicate elements in the array, 
+// and we can return any of the indices with same value.
 
 // Examples
 // A = {1, 2, 3}, T = 2, return 1
