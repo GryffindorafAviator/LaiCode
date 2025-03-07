@@ -17,7 +17,7 @@
 # you are not able to jump out of array, 
 # return -1 in this case.
 
-# Solution
+# Solution 1
 class Solution(object):
   def minJump(self, array):
     """
@@ -41,3 +41,34 @@ class Solution(object):
         dp[i] = temp + 1    
     return dp[0]
 # TC: O(n^2) SC: O(n)
+
+# Solution 2
+from collections import deque
+
+class Solution(object):
+  def minJump(self, array):
+    """
+    input: int[] array
+    return: int
+    """
+    n = len(array)
+    q = deque()
+    q.append((0, 0))
+    visited = [False] * n
+    visited[0] = True
+
+    while len(q) > 0:
+      cur = q.popleft()
+      pos = cur[0]
+      steps = cur[1]
+      for i in range(array[pos]):
+        nxt = pos + 1 + i
+        if nxt >= n:
+          return steps + 1
+        if not visited[nxt]:
+          q.append((nxt, steps + 1))
+          visited[nxt] = True
+    
+    return -1
+#TC: O(n); SC: O(n) 
+
