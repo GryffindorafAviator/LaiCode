@@ -26,7 +26,6 @@ class Solution(object):
       return []
     
     array.sort()
-    # diff = target - array[0] - array[n - 1]
     min_diff = float('inf')
     ans = []
     
