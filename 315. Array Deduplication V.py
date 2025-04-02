@@ -39,7 +39,7 @@ class Solution(object):
         cnt += 1
       
     return array[:cur + 1]
-  # TC: O(n); SC: O(1)  
+# TC: O(n); SC: O(1)  
 
           
 
