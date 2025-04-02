@@ -24,7 +24,6 @@ class Solution(object):
       return '1'
 
     num = '1'
-    
     for i in range(n - 1):
       temp = []
       cur = 0
